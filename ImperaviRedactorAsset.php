@@ -30,7 +30,7 @@ class ImperaviRedactorAsset extends AssetBundle
 
         $appLanguage = strtolower(substr(Yii::$app->language , 0, 2)); //First 2 letters
 
-        if($appLanguage != 'en' && file_exists(Yii::getAlias('@yii/imperavi/assets') . 'lang/' . $appLanguage . '.js')){
+        if($appLanguage != 'en' && file_exists(Yii::getAlias('@yii/imperavi/assets') . '/lang/' . $appLanguage . '.js')){
             $this->js[] = 'lang/' . $appLanguage . '.js';
         }
 
